@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Home {% endblock %}</title>
+</head>
+<body>
+  <nav>
+    <a href="{% url 'home' %}">Bosh sahifa</a>
+    <a href="{% url 'about' %}">Biz haqimizda</a>
+  </nav>
+
+  <main>
+    {% block content %}
+    <p>
+      Bu bizning sahifa asosiy menyusi ...
+    </p>
+    {% endblock %}
+  </main>
+</body>
+</html>
